@@ -3,7 +3,6 @@ class ValorantMap {
   final String splash;
   final String coordinates;
   final String displayIcon;
-  final String regionName;
   final String stylizedBackgroundImage;
 
   ValorantMap({
@@ -11,7 +10,6 @@ class ValorantMap {
     required this.splash,
     required this.coordinates,
     required this.displayIcon,
-    required this.regionName,
     required this.stylizedBackgroundImage,
   });
 
@@ -21,7 +19,6 @@ class ValorantMap {
       splash: json['splash'] ?? '',
       coordinates: json['coordinates'] ?? '',
       displayIcon: json['displayIcon'] ?? '',
-      regionName: json['regionName'] ?? 'Unknown Region',
       stylizedBackgroundImage: json['stylizedBackgroundImage'] ?? '',
     );
   }
